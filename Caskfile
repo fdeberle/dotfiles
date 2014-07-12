@@ -22,3 +22,11 @@ cask install transmission 2> /dev/null
 cask install ukelele 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install vlc 2> /dev/null
+# Personal stuff:
+cask install firefox 2> /dev/null
+cask install onepassword 2> /dev/null
+cask install phpstorm 2> /dev/null
+cask install textmate 2> /dev/null
+cask install sequel-pro 2> /dev/null
+cask install caffeine 2> /dev/null
+cask install nvalt 2> /dev/null
