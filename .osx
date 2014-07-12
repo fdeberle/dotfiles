@@ -30,15 +30,17 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 # Menu bar: hide the Time Machine, Volume, User, and Bluetooth icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+		"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+		"/System/Library/CoreServices/Menu Extras/Clock.menu" \
 		"/System/Library/CoreServices/Menu Extras/User.menu"
+#		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+#		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
 done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+#defaults write com.apple.systemuiserver menuExtras -array \
+#	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+#	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+#	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
@@ -111,8 +113,8 @@ systemsetup -setcomputersleep Off > /dev/null
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# Enable Notification Center and don't remove the menu bar icon
+launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -433,7 +435,7 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulato
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Desktop
-defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Start screen saver
 defaults write com.apple.dock wvous-bl-corner -int 5
