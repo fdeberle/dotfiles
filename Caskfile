@@ -30,3 +30,4 @@ cask install textmate 2> /dev/null
 cask install sequel-pro 2> /dev/null
 cask install caffeine 2> /dev/null
 cask install nvalt 2> /dev/null
+cask install limechat 2> /dev/null
