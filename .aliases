@@ -149,3 +149,7 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# FD: Call vpnc
+alias vpnc="sudo /usr/local/sbin/vpnc"
+alias vpnc-disconnect="sudo /usr/local/sbin/vpnc-disconnect"
