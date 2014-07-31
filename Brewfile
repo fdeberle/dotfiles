@@ -60,5 +60,8 @@ install zopfli
 
 install homebrew/versions/lua52
 
+# Personal stuff:
+install htop
+
 # Remove outdated versions from the cellar
 cleanup
