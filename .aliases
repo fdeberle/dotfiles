@@ -154,5 +154,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # Conf file: /usr/local/etc/vpnc/default.conf
 alias vpnc="sudo /usr/local/sbin/vpnc"
 alias vpnc-disconnect="sudo /usr/local/sbin/vpnc-disconnect"
+alias vpnc-status="while [ `ps aux |grep vpnc|grep -v grep|awk '{print $2}'` ] ; do printf 'Connected\r'; done"
 
 alias top="htop"
