@@ -151,6 +151,7 @@ alias reload="exec $SHELL -l"
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
 
 # FD: Call vpnc
+# Conf file: /usr/local/etc/vpnc/default.conf
 alias vpnc="sudo /usr/local/sbin/vpnc"
 alias vpnc-disconnect="sudo /usr/local/sbin/vpnc-disconnect"
 
