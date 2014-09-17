@@ -157,3 +157,5 @@ alias vpnc-disconnect="sudo /usr/local/sbin/vpnc-disconnect"
 alias vpnc-status="while [ `ps aux |grep vpnc|grep -v grep|awk '{print $2}'` ] ; do printf 'Connected\r'; done"
 
 alias top="htop"
+
+alias mongod="mongod --fork --logpath /var/log/mongodb.log"
