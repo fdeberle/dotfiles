@@ -158,4 +158,6 @@ alias vpnc-status="while [ `ps aux |grep vpnc|grep -v grep|awk '{print $2}'` ] ;
 
 alias top="htop"
 
-alias mongod="mongod --fork --logpath /usr/local/var/log/mongodb.log"
+alias mongostart="mongod --fork --logpath /usr/local/var/log/mongodb.log"
+# Doesn't work on Mac:
+#alias mongostop="mongod --shutdown"
