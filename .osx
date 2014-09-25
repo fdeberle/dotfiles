@@ -190,7 +190,7 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
 defaults write NSGlobalDomain AppleLanguages -array "de"
 defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Zentimeter"
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
