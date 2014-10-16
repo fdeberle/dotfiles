@@ -15,6 +15,9 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Autocomplete for 'g' as well
+complete -o default -o nospace -F _git g
+
 # git-smart
 # https://github.com/geelen/git-smart
 alias gup='git smart-pull'
