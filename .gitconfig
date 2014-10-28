@@ -33,6 +33,9 @@
 	# Checkout
 	co = checkout
 
+	# Branch
+	br = branch
+
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
@@ -88,6 +91,9 @@
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
+
+	# Use case sensivity
+	ignorecase = false
 
 [color]
 
