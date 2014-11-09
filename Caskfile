@@ -32,3 +32,5 @@ cask install caffeine 2> /dev/null
 cask install nvalt 2> /dev/null
 cask install limechat 2> /dev/null
 cask install grandtotal 2> /dev/null
+cask install vagrant 2> /dev/null
+cask install vagrant-manager 2> /dev/null
