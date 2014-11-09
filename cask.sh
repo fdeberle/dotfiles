@@ -19,7 +19,7 @@ installcask opera-developer
 installcask opera-next
 installcask sublime-text
 installcask the-unarchiver
-installcask tor-browser
+installcask torbrowser
 installcask transmission
 installcask ukelele
 installcask virtualbox
