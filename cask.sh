@@ -36,5 +36,6 @@ installcask onepassword
 installcask phpstorm
 installcask sequel-pro
 installcask textmate
+installcask tunnelblick
 installcask vagrant
 installcask vagrant-manager
