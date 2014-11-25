@@ -26,14 +26,15 @@ installcask virtualbox
 installcask vlc
 
 # Personal stuff:
+installcask caffeine
 installcask firefox
+installcask grandtotal
+installcask handbrake
+installcask limechat
+installcask nvalt
 installcask onepassword
 installcask phpstorm
-installcask textmate
 installcask sequel-pro
-installcask caffeine
-installcask nvalt
-installcask limechat
-installcask grandtotal
+installcask textmate
 installcask vagrant
 installcask vagrant-manager
