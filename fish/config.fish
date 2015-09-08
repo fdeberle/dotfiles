@@ -15,3 +15,5 @@ source $OMF_PATH/init.fish
 set fish_theme budspencer
 
 set fish_key_bindings fish_vi_key_bindings
+
+. ~/.config/fish/aliases.fish
