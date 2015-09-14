@@ -16,4 +16,10 @@ set fish_theme budspencer
 
 set fish_key_bindings fish_vi_key_bindings
 
+# Make Vim the default editor
+set --export EDITOR "vim -f"
+
+# Make Vim usable with git
+set --export GIT_EDITOR "vim -f"
+
 . ~/.config/fish/aliases.fish
